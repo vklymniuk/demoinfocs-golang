@@ -2,9 +2,12 @@ language: go
 sudo: required
 
 go:
-  - 1.10.x
+  - 1.11.x
   - stable
   - master
+
+env:
+  - GO111MODULE=on
 
 before_script:
   # We don't want to run the demo set test with race condition testing.
